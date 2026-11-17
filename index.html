@@ -8,10 +8,15 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Arte Bianca — Pizzeria Italiana in Den Haag" />
   <meta property="og:description" content="Italiaanse roots. Sardijnse ziel. Pizza met passie in de Piet Heinstraat." />
-  <meta property="og:image" content="assets/images/hero-two-pizzas.webp" />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="preload" href="assets/images/hero-two-pizzas.webp" as="image" />
+  <meta property="og:image" content="hero-two-pizzas.webp" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="hero-two-pizzas.webp" as="image" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Image files are uploaded directly to the repository root. -->
+  <style>
+    .hero__image { background-image: url("hero-two-pizzas.webp") !important; }
+    .order__background { background-image: url("three-pizzas.webp") !important; }
+  </style>
   <script defer src="script.js"></script>
   <title>Arte Bianca — Pizzeria Italiana | Den Haag</title>
 </head>
@@ -73,7 +78,7 @@
     <section class="section story" id="verhaal" aria-labelledby="story-title">
       <div class="container story__grid">
         <div class="story__visual reveal">
-          <img src="assets/images/verdure-dark.webp" alt="Ambachtelijke pizza met gegrilde groenten op een donker tafelblad" loading="lazy" width="1672" height="941" />
+          <img src="verdure-dark.webp" alt="Ambachtelijke pizza met gegrilde groenten op een donker tafelblad" loading="lazy" width="1672" height="941" />
           <span class="story__vertical">LA NOSTRA STORIA</span>
           <span class="story__number">01 / 04</span>
         </div>
@@ -100,15 +105,15 @@
         </div>
         <div class="signature__grid">
           <article class="food-card reveal">
-            <div class="food-card__image"><img src="assets/images/parma-rucola.webp" loading="lazy" alt="Pizza met Parmaham, rucola en schaafsel Parmezaanse kaas" width="1672" height="941"/><span class="food-card__index">01</span></div>
+            <div class="food-card__image"><img src="parma-rucola.webp" loading="lazy" alt="Pizza met Parmaham, rucola en schaafsel Parmezaanse kaas" width="1672" height="941"/><span class="food-card__index">01</span></div>
             <div class="food-card__body"><h3>Parma & Rucola</h3><span>ITALIAANSE KLASSIEKER</span></div>
           </article>
           <article class="food-card reveal">
-            <div class="food-card__image"><img src="assets/images/bianca-pizza.webp" loading="lazy" alt="Witte pizza met romige kaas en roze ham" width="1254" height="1254"/><span class="food-card__index">02</span></div>
+            <div class="food-card__image"><img src="bianca-pizza.webp" loading="lazy" alt="Witte pizza met romige kaas en roze ham" width="1254" height="1254"/><span class="food-card__index">02</span></div>
             <div class="food-card__body"><h3>Pizza Bianca</h3><span>ROMIG & VOL SMAAK</span></div>
           </article>
           <article class="food-card reveal">
-            <div class="food-card__image"><img src="assets/images/verdure-light.webp" loading="lazy" alt="Pizza met gegrilde aubergine, champignons, paprika en tomaat" width="1448" height="1086"/><span class="food-card__index">03</span></div>
+            <div class="food-card__image"><img src="verdure-light.webp" loading="lazy" alt="Pizza met gegrilde aubergine, champignons, paprika en tomaat" width="1448" height="1086"/><span class="food-card__index">03</span></div>
             <div class="food-card__body"><h3>Verdure</h3><span>KLEURRIJK & AMBACHTELIJK</span></div>
           </article>
         </div>
@@ -163,10 +168,10 @@
         <p>De mooiste details uit onze keuken — van luchtige korsten tot verse Italiaanse ingrediënten.</p>
       </div>
       <div class="gallery__grid">
-        <button class="gallery__tile gallery__tile--wide" type="button" data-lightbox="assets/images/three-pizzas.webp" data-caption="Drie ambachtelijke pizza's" aria-label="Vergroot foto van drie pizza's"><img src="assets/images/three-pizzas.webp" loading="lazy" alt="Drie pizza's samen op een rustieke tafel" width="1672" height="941"/><span class="gallery__zoom">BEKIJK FOTO ↗</span></button>
-        <button class="gallery__tile gallery__tile--square" type="button" data-lightbox="assets/images/parma-light.webp" data-caption="Pizza met Parmaham en rucola" aria-label="Vergroot foto van Parma pizza"><img src="assets/images/parma-light.webp" loading="lazy" alt="Pizza met Parmaham, rucola en kaas op linnen" width="1254" height="1254"/><span class="gallery__zoom">BEKIJK FOTO ↗</span></button>
-        <button class="gallery__tile gallery__tile--square" type="button" data-lightbox="assets/images/bianca-pizza.webp" data-caption="Witte pizza met ham" aria-label="Vergroot foto van pizza bianca"><img src="assets/images/bianca-pizza.webp" loading="lazy" alt="Witte pizza met ham, gefotografeerd van boven" width="1254" height="1254"/><span class="gallery__zoom">BEKIJK FOTO ↗</span></button>
-        <button class="gallery__tile gallery__tile--wide" type="button" data-lightbox="assets/images/verdure-detail.webp" data-caption="Gegrilde groenten en een luchtige korst" aria-label="Vergroot close-up van groentepizza"><img src="assets/images/verdure-detail.webp" loading="lazy" alt="Detail van een pizza met gegrilde groenten en charred korst" width="1672" height="941"/><span class="gallery__zoom">BEKIJK FOTO ↗</span></button>
+        <button class="gallery__tile gallery__tile--wide" type="button" data-lightbox="three-pizzas.webp" data-caption="Drie ambachtelijke pizza's" aria-label="Vergroot foto van drie pizza's"><img src="three-pizzas.webp" loading="lazy" alt="Drie pizza's samen op een rustieke tafel" width="1672" height="941"/><span class="gallery__zoom">BEKIJK FOTO ↗</span></button>
+        <button class="gallery__tile gallery__tile--square" type="button" data-lightbox="parma-light.webp" data-caption="Pizza met Parmaham en rucola" aria-label="Vergroot foto van Parma pizza"><img src="parma-light.webp" loading="lazy" alt="Pizza met Parmaham, rucola en kaas op linnen" width="1254" height="1254"/><span class="gallery__zoom">BEKIJK FOTO ↗</span></button>
+        <button class="gallery__tile gallery__tile--square" type="button" data-lightbox="bianca-pizza.webp" data-caption="Witte pizza met ham" aria-label="Vergroot foto van pizza bianca"><img src="bianca-pizza.webp" loading="lazy" alt="Witte pizza met ham, gefotografeerd van boven" width="1254" height="1254"/><span class="gallery__zoom">BEKIJK FOTO ↗</span></button>
+        <button class="gallery__tile gallery__tile--wide" type="button" data-lightbox="verdure-detail.webp" data-caption="Gegrilde groenten en een luchtige korst" aria-label="Vergroot close-up van groentepizza"><img src="verdure-detail.webp" loading="lazy" alt="Detail van een pizza met gegrilde groenten en charred korst" width="1672" height="941"/><span class="gallery__zoom">BEKIJK FOTO ↗</span></button>
       </div>
     </section>
 
